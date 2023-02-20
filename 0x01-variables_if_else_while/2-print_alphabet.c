@@ -5,21 +5,14 @@
  *
  * Return: 0
  */
+
 int main(void)
 {
-	char z = 'a';
-	char cz = 'A';
+	char c;
 
-	while (z <= 'z')
-	{
-		putchar(z);
-		z++;
-	}
-	while (cz <= 'Z')
-	{
-		putchar(cz);
-		cz++;
-	}
+	for (c = 'a'; c<= 'z'; c++)
+	    putchar(c);
+
 	putchar('\n');
 	return (0);
 }
