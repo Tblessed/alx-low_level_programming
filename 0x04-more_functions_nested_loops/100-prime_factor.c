@@ -1,18 +1,18 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
-  * print_numbers - Print the numbers since 0 up to 9
-  *
-  * Return: The numbers since 0 up to 9
-  */
-void print_numbers(void)
+ * main - print prime
+ * Return: 0
+ */
+
+int main(void)
 {
-	int x;
-
-	for (x = 0; x <= 9; x++)
-	{
-		_putchar(x + '0');
-	}
-
-	_putchar('\n');
+unsigned long int i = 3, n = 612852475143;
+for (; i < 12057; i += 2)
+{
+while (n % i == 0 && n != i)
+n /= i;
+}
+printf("%lu\n", n);
+return (0);
 }
