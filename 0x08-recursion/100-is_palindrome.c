@@ -31,3 +31,17 @@ return (0);
 else
 return (check_palindrome(a + 1, b - 1, c));
 }
+
+/**
+* is_palindrome - states if a string is a palindrome
+* @s: string to check
+*
+* Return: 1 if palindrome, 0 if not
+*/
+int is_palindrome(char *s)
+{
+int i;
+
+i = _strlen(s) - 1;
+return (check_palindrome(0, i, s));
+}
